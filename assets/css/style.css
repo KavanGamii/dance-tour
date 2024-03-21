@@ -1,0 +1,456 @@
+:root {
+    --main-black: #2c2c2c;
+    --main-orange: #ff630c;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.woff2') format('woff2'),
+        url('../fonts/Oswald-Bold.woff') format('woff'),
+        url('../fonts/Oswald-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-SemiBold.woff2') format('woff2'),
+        url('../fonts/Oswald-SemiBold.woff') format('woff'),
+        url('../fonts/Oswald-SemiBold.ttf') format('ttf');
+
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Oswald-ExtraLight.woff') format('woff'),
+        url('../fonts/Oswald-ExtraLight.ttf') format('ttf');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Light.woff2') format('woff2'),
+        url('../fonts/Oswald-Light.woff') format('woff'),
+        url('../fonts/Oswald-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Medium.woff2') format('woff2'),
+        url('../fonts/Oswald-Medium.woff') format('woff'),
+        url('../fonts/Oswald-Medium.ttf') format('ttf');
+
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('ttf');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* comman css */
+body {
+    font-family: "Oswald";
+    margin: 0px;
+    padding: 0px;
+}
+
+.img {
+    width: 100%;
+}
+
+.max-padding {
+    padding: 60px 0px;
+}
+
+.min-padding {
+    padding: 5px 15px;
+}
+
+/* Nav Section Start  */
+header {
+    background-color: var(--main-black);
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 6px 0px;
+    z-index: 3;
+}
+.navbar img{
+    cursor: pointer;
+}
+.navbar {
+    padding: 0;
+    transition: all 0.5s ease;
+
+}
+
+.nav-item a.nav-link {
+    color: var(--black);
+    padding: 25px 15px !important;
+    position: relative;
+    font-size: 25px;
+    transition: 0.7s;
+}
+
+.nav-item:hover {
+    color: #969696;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #969696;
+    text-decoration: underline;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: #969696;
+
+}
+
+/* ************Hero-Section */
+.hero-section {
+    background-color: var(--main-black);
+
+}
+
+.hero-inner {
+    position: relative;
+
+}
+
+.hero-inner img {
+    max-width: 100%;
+
+}
+
+.hero-title {
+    position: absolute;
+    color: white;
+    width: 45%;
+    top: 311px;
+    left: 8%;
+
+}
+
+.hero-title h1 {
+    font-size: 127px;
+    font-weight: 400;
+}
+
+.hero-title p {
+    font-size: 29.7px;
+    font-weight: 200;
+
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    top: 10px;
+}
+
+.hero-button {
+    background-color: var(--main-orange);
+    color: white;
+    border-color: var(--main-orange);
+    font-size: 29.7px;
+    padding: 10px 45px;
+    transition: 0.7s;
+    font-weight: 300;
+}
+
+.hero-button:hover {
+    background-color: var(--main-black);
+    color: var(--main-orange);
+    border-color: var(--main-black);
+}
+
+/* Dance Section Start */
+
+.dance-tour {
+    background-color: var(--main-orange);
+    color: white;
+    padding-bottom: 80px;
+
+}
+
+.heading {
+    text-align: center;
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading h2 {
+    font-size: 75px;
+    font-weight: 800;
+}
+
+.heading p {
+    font-weight: 100;
+    font-size: 29.74px;
+}
+
+.dance-cart {
+    text-align: center;
+    background-color: var(--main-black);
+    color: white;
+    margin: 20px;
+}
+
+.dance-cart img {
+    width: 100%;
+}
+
+.details h3 {
+    font-size: 36px;
+}
+
+.details p {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+/* Pricing Section Start */
+.pricing {
+    background-color: var(--main-black);
+    color: white;
+    text-align: center;
+
+}
+
+
+.price-cart {
+    background-color: var(--main-orange);
+    margin: 20px;
+    padding-bottom: 25px;
+
+}
+
+.price-cart img {
+    padding-top: 20px;
+}
+
+
+.price-button {
+    background-color: var(--main-black);
+    color: white;
+    padding: 5px 98px;
+    font-size: 28px;
+    transition: 0.7s;
+}
+
+.price-button:hover {
+    background-color: white;
+    border-color: white;
+    color: rgb(0, 0, 0);
+
+}
+
+/*     <!-- Amazing Dance & Best Dance Section Start --> */
+.amazing-dance {
+    background-color: var(--main-orange);
+}
+
+.dancer-amazing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amazing-dance img {
+    max-width: 100%;
+}
+
+.dance {
+    color: white;
+    padding: 0px 66px;
+}
+
+.dance h1 {
+    font-size: 75px;
+}
+
+.dance p {
+    font-size: 29px;
+    font-weight: 300;
+    padding: 30px 0px;
+}
+
+.dance-btn {
+    border-color: var(--main-black);
+    background-color: var(--main-black);
+    color: white;
+    transition: 0.7s;
+    font-size: 29.5px;
+    padding: 10px 64px;
+}
+
+.dance-btn:hover {
+    border-color: white;
+    background-color: white;
+    color: var(--main-black);
+
+}
+
+/* our-statistics Start */
+.our-statistics {
+    background-color: var(--main-black);
+    color: white;
+}
+
+.number-stai {
+    text-align: center;
+}
+
+.number-stai h3 {
+    font-size: 64px;
+}
+
+.number-stai p {
+    font-size: 41px;
+    font-weight: 200;
+}
+
+/* Author Section */
+.author {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.author-thought {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.author img {
+    max-width: 100%;
+}
+
+.author-thought p {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.author-thought h3 {
+    font-size: 58px;
+}
+
+/* Subscribe Section Start */
+.subscribe-btn {
+    width: 50%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#basic-addon2 {
+    padding: 10px 30px;
+    transition: 0.7s;
+}
+
+#basic-addon2:hover {
+    background-color: rgb(154, 154, 154);
+    border: white;
+    color: black;
+}
+
+/* ********Footer Start*********** */
+.icons {
+    display: flex;
+    gap: 8px;
+
+}
+
+#icon {
+    width: 28px;
+    color: black;
+    background-color: white;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#icon:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: var(--main-black);
+
+}
+
+.footer-li {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer {
+    background-color: var(--main-black);
+    color: white;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    font-size: 15px;
+    transition: 0.7s;
+}
+
+.footer-li a:hover {
+    text-decoration: underline;
+    color: white;
+
+}
+
+.footer h5 {
+    font-weight: bold;
+    font-size: 25px
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/author.png);
+    background-size: cover;
+    position: relative;
+}
+
+.author {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(142, 49, 3, 0.73);
+}
